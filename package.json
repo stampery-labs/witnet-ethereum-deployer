@@ -1,0 +1,52 @@
+{
+  "name": "witnet-ethereum-deployer",
+  "version": "0.1.0",
+  "description": "Witnet Ethereum smart contracts deployer",
+  "main": "witnet/lib/index.js",
+  "repository": "https://github.com/witnet/witnet_ethereum_deployer",
+  "author": "Witnet Devs <devs@witnet.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "npx truffle test",
+    "console": "npx truffle console",
+    "compile-contracts": "truffle compile --all",
+    "compile-flattened": "npx truffle compile --all --config flattened-config.js ",
+    "coverage": "solidity-coverage",
+    "flatten": " mkdir contracts/flattened/ 2>/dev/null; npx truffle-flattener contracts/*.sol > contracts/flattened/Flattened.sol",
+    "fmt": "npm run solium && npm run lint",
+    "fmt!": "npm run solium:fix && npm run lint:fix",
+    "solium": "solium -d contracts",
+    "solium:fix": "solium -d contracts --fix",
+    "migrate": "npx truffle migrate",
+    "migrate-flattened": "npm run flatten && npx truffle migrate --config flattened-config.js",
+    "verify-flattened": "npx truffle run verify"
+  },
+  "dependencies": {
+    "witnet-ethereum-block-relay": "git+https://github.com/witnet/witnet-ethereum-block-relay",
+    "witnet-ethereum-bridge": "git+https://github.com/witnet/witnet-ethereum-bridge",
+    "witnet-price-feeds-examples": "git+https://github.com/stampery-labs/witnet-price-feeds-examples"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "babel-plugin-inline-script-import": "^0.0.4",
+    "babel-register": "^6.26.0",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "ethlint": "^1.2.5",
+    "ganache-cli": "^6.8.2",
+    "node-eval": "^2.0.0",
+    "truffle": "^5.1.10",
+    "truffle-flattener": "git+https://github.com/witnet/truffle-flattener.git#single-experimental",
+    "truffle-plugin-verify": "^0.3.8"
+  }
+}

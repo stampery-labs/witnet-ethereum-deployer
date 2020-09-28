@@ -3,6 +3,7 @@ var Witnet = artifacts.require("Witnet")
 const addresses = require("./addresses.json")
 
 module.exports = function (deployer, network) {
+  network = network.split("-")[0]
   if (network in addresses && addresses[network].Witnet) {
     Witnet.address = addresses[network].Witnet
   }

@@ -5,6 +5,7 @@ const GoldEurPriceFeed = artifacts.require("GoldEurPriceFeed")
 const addresses = require("./addresses.json")
 
 module.exports = function (deployer, network) {
+  network = network.split("-")[0]
   if (network in addresses && addresses[network].GoldEurPriceFeed) {
     GoldEurPriceFeed.address = addresses[network].GoldEurPriceFeed
   } else{

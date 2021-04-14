@@ -1,12 +1,10 @@
 pragma solidity ^0.6.6;
 pragma experimental ABIEncoderV2;
 
-// Import witnet-ethereum-block-relay-contracts
-import "witnet-ethereum-block-relay/contracts/CentralizedBlockRelay.sol";
-import "witnet-ethereum-block-relay/contracts/BlockRelayProxy.sol";
 // Import the UsingWitnet library that enables interacting with Witnet
-import "witnet-ethereum-bridge/contracts/WitnetRequestsBoard.sol";
-import "witnet-ethereum-bridge/contracts/WitnetRequestsBoardProxy.sol";
+import "witnet-ethereum-bridge/contracts/UsingWitnet.sol";
+import "witnet-ethereum-bridge/contracts/WitnetRequestBoard.sol";
+import "witnet-ethereum-bridge/contracts/WitnetRequestBoardProxy.sol";
 import "witnet-ethereum-bridge/contracts/Witnet.sol";
 import "witnet-ethereum-bridge/contracts/CBOR.sol";
 // Import price feeds

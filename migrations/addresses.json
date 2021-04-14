@@ -1,6 +1,20 @@
 {
   "rinkeby" : {
+
+    "Witnet": "0x47689bc2d27770Ab3a358C1C2C9c998028ea0823",
+    "WitnetRequestBoard": "0x90d08bF4e89C9D1fFb69cb4F783c38F6493ae74a",
+    "WitnetRequestBoardProxy": "0xE1EC13d1521B98ee7b826751048806E85DC1F1bA",
+    "BtcUsdPriceFeed": "0x2Bc468FeE3222273c9CCeb2F326c189EC2b9c7c0",
+    "EthUsdPriceFeed": "0xF51704649E14094DB8F1cBd8CEE2c204dFD83bB5",
+    "GoldEurPriceFeed": "0xF6e23A466617E1A3d81cA86D3eBD69DdA4eF984A"
   },
   "goerli" : {
+
+    "Witnet": "0xb64212DBefFCdDeCC57B7B6F4E49a3B876cA3D6E",
+    "WitnetRequestBoard": "0xCF8B9f0Edc298Da2CD5832Dc9D85D805E33dB5Af",
+    "WitnetRequestBoardProxy": "0xA1539D2d301201f8001F582a8B4F61B206747716",
+    "GoldEurPriceFeed": "0x5ab43d4F7f2B30C1ce5BC8b78eef5bf3F0bc6339",
+    "BtcUsdPriceFeed": "0x2F359585536471c5cFB5d3bC71380cCF99EFbdcB",
+    "EthUsdPriceFeed": "0x6Be525a3D9D2905222D1a9F5153024F909E9eB2c"
   }
 }

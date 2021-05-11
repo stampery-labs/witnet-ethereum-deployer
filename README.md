@@ -1,1 +1,1 @@
-# witnet_ethereum_deployer
+# witnet-ethereum-deployer

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Witnet Ethereum smart contracts deployer",
   "main": "witnet/lib/index.js",
-  "repository": "https://github.com/witnet/witnet_ethereum_deployer",
+  "repository": "https://github.com/witnet/witnet-ethereum-deployer",
   "author": "Witnet Devs <devs@witnet.io>",
   "license": "MIT",
   "private": false,
@@ -23,9 +23,8 @@
     "verify-flattened": "npx truffle run verify"
   },
   "dependencies": {
-    "witnet-ethereum-block-relay": "git+https://github.com/witnet/witnet-ethereum-block-relay",
     "witnet-ethereum-bridge": "git+https://github.com/witnet/witnet-ethereum-bridge",
-    "witnet-price-feeds-examples": "git+https://github.com/stampery-labs/witnet-price-feeds-examples"
+    "witnet-price-feed-examples": "git+https://github.com/witnet/witnet-price-feed-examples"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",

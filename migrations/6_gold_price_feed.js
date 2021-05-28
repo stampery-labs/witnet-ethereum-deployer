@@ -1,6 +1,6 @@
 
 const Witnet = artifacts.require("Witnet")
-const WitnetRequestsBoardProxy = artifacts.require("WitnetRequestsBoardProxy")
+const WitnetRequestBoardProxy = artifacts.require("WitnetRequestBoardProxy")
 const GoldEurPriceFeed = artifacts.require("GoldEurPriceFeed")
 const addresses = require("./addresses.json")
 
@@ -10,6 +10,6 @@ module.exports = function (deployer, network) {
     GoldEurPriceFeed.address = addresses[network].GoldEurPriceFeed
   } else{
       deployer.link(Witnet, [GoldEurPriceFeed])
-      deployer.deploy(GoldEurPriceFeed, WitnetRequestsBoardProxy.address)
+      deployer.deploy(GoldEurPriceFeed, WitnetRequestBoardProxy.address)
   }
 }

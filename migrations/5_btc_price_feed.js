@@ -1,5 +1,5 @@
 const Witnet = artifacts.require("Witnet")
-const WitnetRequestsBoardProxy = artifacts.require("WitnetRequestsBoardProxy")
+const WitnetRequestBoardProxy = artifacts.require("WitnetRequestBoardProxy")
 const BtcUsdPriceFeed = artifacts.require("BtcUsdPriceFeed")
 const addresses = require("./addresses.json")
 
@@ -9,6 +9,6 @@ module.exports = function (deployer, network) {
     BtcUsdPriceFeed.address = addresses[network].BtcUsdPriceFeed
   } else{
       deployer.link(Witnet, [BtcUsdPriceFeed])
-      deployer.deploy(BtcUsdPriceFeed, WitnetRequestsBoardProxy.address)
+      deployer.deploy(BtcUsdPriceFeed, WitnetRequestBoardProxy.address)
   }
 }
